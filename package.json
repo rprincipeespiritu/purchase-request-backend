@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@cap-js/postgres": "^3.1.1"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^3.1.1"
+  }
+}
