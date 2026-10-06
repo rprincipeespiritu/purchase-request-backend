@@ -1,0 +1,5 @@
+ID;product;description;quantity;unitPrice;subtotal;request_ID
+cccccccc-cccc-cccc-cccc-ccccccccc001;Laptop Lenovo;Laptop para desarrollo SAP;2;3500.00;7000.00;bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbb001
+cccccccc-cccc-cccc-cccc-ccccccccc002;Monitor Dell;Monitor de 27 pulgadas;2;1200.00;2400.00;bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbb001
+cccccccc-cccc-cccc-cccc-ccccccccc003;Teclado;Teclado para oficina;10;150.00;1500.00;bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbb002
+cccccccc-cccc-cccc-cccc-ccccccccc004;Monitor;Monitor para administración;2;1200.00;2400.00;bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbb003

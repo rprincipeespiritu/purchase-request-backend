@@ -290,50 +290,7 @@ module.exports = cds.service.impl(async function () {
             );
         }
 
-    });
-
-    this.before("CREATE", PurchaseRequestItems, async req => {
-
-        const tx = cds.tx(req);
-
-        const ID = req.data.ID || req.params?.[0]?.ID;
-
-        const currentItem = await tx.run(
-            SELECT.one
-                .from(PurchaseRequestItems)
-                .where({ ID })
-        );
-
-        if (!currentItem) {
-            return req.reject(
-                404,
-                "El item no existe"
-            );
-        }
-
-        const parentRequest = await tx.run(
-            SELECT.one
-                .from(PurchaseRequests)
-                .where({
-                    ID: currentItem.request_ID
-                })
-        );
-
-        if (!parentRequest) {
-            return req.reject(
-                404,
-                "La solicitud asociada no existe"
-            );
-        }
-
-        if (parentRequest.status !== "DRAFT") {
-            return req.reject(
-                400,
-                "No se pueden agregar items de una solicitud que ya fue enviada"
-            );
-        }
-
-    });
+    });    
 
     this.before("DELETE", PurchaseRequestItems, async req => {
 
