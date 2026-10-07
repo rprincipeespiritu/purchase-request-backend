@@ -3,14 +3,25 @@
     "start": "cds-serve"
   },
   "dependencies": {
+    "@cap-js/hana": "^3.1.1",
     "@cap-js/postgres": "^3.1.1",
-    "@sap/cds": "^10.1.1"
+    "@sap/cds": "^10.1.1",
+    "@sap/xssec": "^4"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^3.1.1"
+    "@cap-js/sqlite": "^3.1.1",
+    "@sap/cds-dk": "^10"
   },
   "cds": {
     "requires": {
+      "db": {
+        "[pg]": {
+          "kind": "postgres"
+        },
+        "[production]": {
+          "kind": "hana"
+        }
+      },
       "auth": {
         "kind": "mocked",
         "users": {
@@ -32,6 +43,11 @@
               "Approver"
             ]
           }
+        }
+      },
+      "[production]": {
+        "auth": {
+          "kind": "xsuaa"
         }
       }
     }

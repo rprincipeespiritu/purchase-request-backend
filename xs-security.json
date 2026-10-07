@@ -1,0 +1,31 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Requester",
+      "description": "Requester"
+    },
+    {
+      "name": "$XSAPPNAME.Approver",
+      "description": "Approver"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "Requester",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.Requester"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "Approver",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.Approver"
+      ],
+      "attribute-references": []
+    }
+  ]
+}
