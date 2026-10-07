@@ -7,6 +7,8 @@ module.exports = cds.service.impl(async function () {
         PurchaseRequestItems
     } = this.entities;
 
+    const db = cds.entities("com.portfolio.purchase");
+
     // =========================================================
     // HELPERS
     // =========================================================
@@ -81,9 +83,42 @@ module.exports = cds.service.impl(async function () {
     // PURCHASE REQUESTS
     // =========================================================
 
-    this.before("CREATE", PurchaseRequests, req => {
+    this.before("CREATE", PurchaseRequests, async req => {
 
+        const tx = cds.tx(req);
+
+        // ==========================================
+        // USUARIO AUTENTICADO
+        // ==========================================
+
+        const username = req.user.id;
+
+        const user = await tx.run(
+            SELECT.one
+                .from(db.Users)
+                .where({ username })
+        );
+
+        if (!user) {
+            return req.reject(
+                403,
+                "El usuario autenticado no está registrado"
+            );
+        }
+
+        // Nunca confiar en requester_ID enviado por frontend
+        req.data.requester_ID = user.ID;
+
+        // El departamento también se obtiene del usuario
+        req.data.department_ID = user.department_ID;
+
+        // Toda solicitud nueva comienza como DRAFT
         req.data.status = "DRAFT";
+
+
+        // ==========================================
+        // CALCULAR ITEMS
+        // ==========================================
 
         let total = 0;
 
@@ -168,6 +203,26 @@ module.exports = cds.service.impl(async function () {
             return req.reject(
                 404,
                 "La solicitud no existe"
+            );
+        }
+
+        const user = await tx.run(
+            SELECT.one
+                .from(db.Users)
+                .where({ username: req.user.id })
+        );
+
+        if (!user) {
+            return req.reject(
+                403,
+                "El usuario autenticado no está registrado"
+            );
+        }
+
+        if (request.requester_ID !== user.ID) {
+            return req.reject(
+                403,
+                "No puede enviar una solicitud perteneciente a otro usuario"
             );
         }
 

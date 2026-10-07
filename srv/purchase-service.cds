@@ -32,6 +32,17 @@ service PurchaseRequestService {
             action reject()  returns PurchaseRequests;
         };
 
+    @restrict: [
+        {
+            grant: ['READ', 'CREATE', 'UPDATE', 'DELETE'],
+            to: 'Requester',
+            where: 'request.requester.username = $user'
+        },
+        {
+            grant: 'READ',
+            to: 'Approver'
+        }
+    ]
     entity PurchaseRequestItems
         as projection on db.PurchaseRequestItems;
 
