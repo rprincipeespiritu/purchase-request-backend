@@ -3,7 +3,7 @@
     "start": "cds-serve"
   },
   "dependencies": {
-    "@cap-js/hana": "^3.1.1",
+    "@cap-js/hana": "^3",
     "@cap-js/postgres": "^3.1.1",
     "@sap/cds": "^10.1.1",
     "@sap/xssec": "^4"
@@ -51,5 +51,8 @@
         }
       }
     }
+  },
+  "engines": {
+    "node": "^24"
   }
 }
