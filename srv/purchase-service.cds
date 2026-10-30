@@ -1,4 +1,4 @@
-using { com.portfolio.purchase as db } from '../db/schema';
+using {com.portfolio.purchase as db} from '../db/schema';
 
 @path: '/purchase'
 service PurchaseRequestService {
@@ -6,20 +6,30 @@ service PurchaseRequestService {
     @restrict: [
         {
             grant: 'CREATE',
-            to: 'Requester'
+            to   : 'Requester'
         },
         {
-            grant: ['READ', 'UPDATE'],
-            to: 'Requester',
+            grant: [
+                'READ',
+                'UPDATE',
+                'submit'
+            ],
+            to   : 'Requester',
             where: 'requester.username = $user'
         },
         {
             grant: 'READ',
-            to: 'Approver'
+            to   : 'Approver'
+        },
+        {
+            grant: [
+                'approve',
+                'reject'
+            ],
+            to   : 'Approver'
         }
     ]
-    entity PurchaseRequests
-        as projection on db.PurchaseRequests
+    entity PurchaseRequests     as projection on db.PurchaseRequests
         actions {
 
             @requires: 'Requester'
@@ -34,18 +44,28 @@ service PurchaseRequestService {
 
     @restrict: [
         {
-            grant: ['READ', 'CREATE', 'UPDATE', 'DELETE'],
-            to: 'Requester',
+            grant: [
+                'READ',
+                'CREATE',
+                'UPDATE',
+                'DELETE'
+            ],
+            to   : 'Requester',
             where: 'request.requester.username = $user'
         },
         {
             grant: 'READ',
-            to: 'Approver'
+            to   : 'Approver'
         }
     ]
-    entity PurchaseRequestItems
-        as projection on db.PurchaseRequestItems;
+    entity PurchaseRequestItems as projection on db.PurchaseRequestItems;
 
-    entity Departments
-        as projection on db.Departments;
+    @restrict: [{
+        grant: 'READ',
+        to   : [
+            'Requester',
+            'Approver'
+        ]
+    }]
+    entity Departments          as projection on db.Departments;
 }

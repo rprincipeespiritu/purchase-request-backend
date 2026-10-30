@@ -40,16 +40,33 @@ module.exports = cds.service.impl(async function () {
         );
 
         if (!request) {
-            return req.reject(
-                404,
-                "La solicitud no existe"
-            );
+            return req.reject(404, "La solicitud no existe");
         }
 
         if (request.status !== "DRAFT") {
             return req.reject(
                 400,
                 "Solo se pueden modificar solicitudes en estado DRAFT"
+            );
+        }
+
+        const user = await tx.run(
+            SELECT.one
+                .from(db.Users)
+                .where({ username: req.user.id })
+        );
+
+        if (!user) {
+            return req.reject(
+                403,
+                "El usuario autenticado no está registrado"
+            );
+        }
+
+        if (request.requester_ID !== user.ID) {
+            return req.reject(
+                403,
+                "No puede modificar una solicitud de otro usuario"
             );
         }
 
@@ -163,6 +180,23 @@ module.exports = cds.service.impl(async function () {
                 404,
                 "La solicitud no existe"
             );
+        }
+
+        const protectedFields = [
+            "requester_ID",
+            "department_ID",
+            "totalAmount",
+            "requestNumber",
+            "requestDate"
+        ];
+
+        for (const field of protectedFields) {
+            if (Object.prototype.hasOwnProperty.call(req.data, field)) {
+                return req.reject(
+                    400,
+                    `El campo ${field} no puede modificarse directamente`
+                );
+            }
         }
 
         if (current.status !== "DRAFT") {
@@ -408,6 +442,13 @@ module.exports = cds.service.impl(async function () {
 
         const tx = cds.tx(req);
 
+        if (Object.prototype.hasOwnProperty.call(req.data, "request_ID")) {
+            return req.reject(
+                400,
+                "No se permite cambiar la solicitud asociada al ítem"
+            );
+        }
+
         const ID =
             req.data.ID ||
             req.params?.[0]?.ID;
@@ -518,6 +559,14 @@ module.exports = cds.service.impl(async function () {
             tx,
             req._parentRequestID
         );
+    });
+
+    this.before('READ', 'Departments', (req) => {
+        console.log('[AUTH DEBUG] Usuario XSUAA:', req.user.id);
+        console.log('[AUTH DEBUG] Roles:', {
+            Requester: req.user.is('Requester'),
+            Approver: req.user.is('Approver')
+        });
     });
 
 });

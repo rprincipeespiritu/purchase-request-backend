@@ -13,7 +13,7 @@
   "role-templates": [
     {
       "name": "Requester",
-      "description": "generated",
+      "description": "Requester role",
       "scope-references": [
         "$XSAPPNAME.Requester"
       ],
@@ -21,7 +21,7 @@
     },
     {
       "name": "Approver",
-      "description": "generated",
+      "description": "Approver role",
       "scope-references": [
         "$XSAPPNAME.Approver"
       ],

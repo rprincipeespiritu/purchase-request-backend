@@ -1,0 +1,13 @@
+{
+  "name": "approuter",
+  "version": "1.0.0",
+  "description": "SAP Application Router - Purchase Request Management",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/@sap/approuter/approuter.js"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@sap/approuter": "^23.3.0"
+  }
+}

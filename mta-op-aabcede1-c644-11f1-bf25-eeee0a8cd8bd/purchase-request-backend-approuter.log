@@ -1,0 +1,212 @@
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:22.212653] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance 24957e8d-43b2-4d65-5010-3500 (STDOUT, CELL)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:22.611379] Security group rules were updated (STDOUT, CELL)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:22.635629] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance 24957e8d-43b2-4d65-5010-3500 (STDOUT, CELL)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:23.452841] Downloading droplet... (STDOUT, CELL)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:24.755385] Downloaded droplet (STDOUT, CELL)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:24.755518] Starting health monitoring of container (STDOUT, CELL)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:24.850345] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.009307] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.361679] npm error Missing script: "start" (STDERR, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.361703] npm error (STDERR, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.361706] npm error Did you mean one of these? (STDERR, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.361709] npm error   npm star # Mark your favorite packages (STDERR, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.361717] npm error   npm stars # View packages marked as favorites (STDERR, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.361719] npm error (STDERR, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.361726] npm error To see a list of scripts, run: (STDERR, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.361729] npm error   npm run (STDERR, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.362621] npm error A complete log of this run can be found in: /home/vcap/app/.npm/_logs/2026-10-12T13_53_25_085Z-debug-0.log (STDERR, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:25.418287] Exit status 1 (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:31.950986] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 24957e8d-43b2-4d65-5010-3500 (STDOUT, CELL)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:31.951014] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 24957e8d-43b2-4d65-5010-3500 (STDOUT, CELL)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:31.971414] Process has crashed with type: "web" (STDOUT, API)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:31.984889] App instance exited with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 payload: {"instance"=>"24957e8d-43b2-4d65-5010-3500", "index"=>0, "cell_id"=>"d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>8, "crash_timestamp"=>1791813211947439643, "version"=>"5ddaf6da-e63f-42e4-97a9-b3c15017d7d6"} (STDOUT, API)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:32.099900] Exit status 137 (STDOUT, PROXY)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:53:33.178015] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 24957e8d-43b2-4d65-5010-3500 (STDOUT, CELL)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:20.127803] Updated app with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 ({"lifecycle"=>{"data"=>{"buildpacks"=>["nodejs_buildpack"]}, "type"=>"buildpack"}}) (STDOUT, API)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:20.243601] Updating process: "web" (STDOUT, API)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:48.203233] Uploading app package for app with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 (STDOUT, API)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:48.367474] Updated app with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:58.616297] Stopping app with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 (STDOUT, API)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:58.796795] Creating build for app with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 (STDOUT, API)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:59.248716] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:59.282688] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:59.282840] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance b69802fb-c0b0-4826-b1b6-ac472de913cd (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:59.676184] Security group rules were updated (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:56:59.703276] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance b69802fb-c0b0-4826-b1b6-ac472de913cd (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:00.017035] Downloading app package... (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:00.017047] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:00.083339] Downloaded build artifacts cache (215B) (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:00.810430] Downloaded app package (6.7M) (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:00.893172] -----> Nodejs Buildpack version 1.9.4 (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:01.203349] -----> Bootstrapping python (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:01.203365] -----> Installing python 3.13.15 (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:01.203468] Copy [/tmp/buildpacks/5be6efbe8830cdb7/dependencies/6832464ec708e1392d482a6034aa2c94/python_3.13.15_linux_x64_cflinuxfs4_0c9cd9fd.tgz] (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:04.630269] -----> Installing binaries (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:04.630351] engines.node (package.json): unspecified (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:04.630368] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:04.630375] [31;1m**WARNING**[0m Node version not specified in package.json or .nvmrc. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:04.630420] -----> Installing node 22.23.2 (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:04.630661] Copy [/tmp/buildpacks/5be6efbe8830cdb7/dependencies/d69f9b8550b7904ed82cbc204ef0d72d/node_22.23.2_linux_x64_cflinuxfs4_8bfe78a5.tgz] (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:06.834435] Using default npm version: 10.9.8 (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:06.834455] -----> Installing yarn 1.22.22 (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:06.834713] Copy [/tmp/buildpacks/5be6efbe8830cdb7/dependencies/e4fe26756e9984a665478d350474fa2e/yarn_1.22.22_linux_noarch_any-stack_b6132b86.tgz] (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.106740] Installed yarn 1.22.22 (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.106771] -----> Creating runtime environment (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.108409] NODE_ENV=production (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.108427] NODE_HOME=/tmp/contents3523704110/deps/0/node (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.108434] NODE_MODULES_CACHE=true (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.108436] NODE_VERBOSE=false (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.108447] NPM_CONFIG_LOGLEVEL=error (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.108450] NPM_CONFIG_PRODUCTION=true (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.108452] -----> Building dependencies (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.108455] Prebuild detected (node_modules already exists) (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.108559] Rebuilding any native modules (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.714140] rebuilt dependencies successfully (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.715065] npm notice (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.715101] npm notice New major version of npm available! 10.9.8 -> 12.2.0 (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.715107] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0 (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.715109] npm notice To update run: npm install -g npm@12.2.0 (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.715111] npm notice (STDOUT, STG)#
+#2026 10 12 13:57:08.274#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5730#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:07.773462] Installing any new modules (package.json + package-lock.json) (STDOUT, STG)#
+#2026 10 12 13:57:18.135#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5733#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:08.360436] up to date in 517ms (STDOUT, STG)#
+#2026 10 12 13:57:18.135#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5733#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:08.360615] 33 packages are looking for funding (STDOUT, STG)#
+#2026 10 12 13:57:18.135#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5733#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:08.360628] run `npm fund` for details (STDOUT, STG)#
+#2026 10 12 13:57:18.135#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5733#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:09.170870] Contrast Security no credentials found. Will not write environment files. (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:18.291663] Exit status 0 (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:18.291724] Uploading droplet, build artifacts cache... (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:18.291781] Uploading droplet... (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:18.291813] Uploading build artifacts cache... (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:18.312944] Uploaded build artifacts cache (222B) (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:18.934616] Creating droplet for app with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 (STDOUT, API)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:22.005419] Uploaded droplet (61.9M) (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:22.025200] Uploading complete (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:22.948959] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance b69802fb-c0b0-4826-b1b6-ac472de913cd (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:22.949011] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance b69802fb-c0b0-4826-b1b6-ac472de913cd (STDOUT, STG)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:23.016705] Staging complete for build b69802fb-c0b0-4826-b1b6-ac472de913cd (STDOUT, API)#
+#2026 10 12 13:57:28.188#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5739#
+[PollStageAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:24.390438] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance b69802fb-c0b0-4826-b1b6-ac472de913cd (STDOUT, STG)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:28.257961] Updated app with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 ({:droplet_guid=>"146f2430-b305-4c96-8107-0d397a0ce8ce"}) (STDOUT, API)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:28.522265] Creating revision for app with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 (STDOUT, API)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:28.553415] Starting app with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 (STDOUT, API)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:28.801583] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance 47556ddc-2c54-42ee-66fb-acef (STDOUT, CELL)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:29.223471] Security group rules were updated (STDOUT, CELL)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:29.248974] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance 47556ddc-2c54-42ee-66fb-acef (STDOUT, CELL)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:30.053274] Downloading droplet... (STDOUT, CELL)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:33.480306] Downloaded droplet (61.9M) (STDOUT, CELL)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:33.480459] Starting health monitoring of container (STDOUT, CELL)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:33.572940] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:33.742374] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:34.075760] > approuter@1.0.0 start (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:34.075782] > node node_modules/@sap/approuter/approuter.js (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:34.226451] {"written_at":"2026-10-12T13:57:34.224Z","written_ts":1791813454224000000,"csn_component":"-","correlation_id":"-","type":"log","logger":"nodejs-logger","layer":"/LoggingLibrary","level":"warning","container_id":"10.32.1.5","component_type":"application","component_id":"5b8ed629-291b-4e5e-9e4f-de1a8922d6e4","component_name":"purchase-request-backend-approuter","component_instance":-1,"source_instance":-1,"organization_id":"356975e6-84af-4448-974f-57b052aa2bab","organization_name":"1b7fbc6atrial","space_id":"6d30c9a4-0ab5-4ffc-a269-75b8540dfac5","space_name":"dev","context_id":"","msg":"Dynamic log level switching not available"} (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:34.621914] {"written_at":"2026-10-12T13:57:34.621Z","written_ts":1791813454621000000,"csn_component":"-","correlation_id":"mv5bgu1p","type":"log","logger":"nodejs-logger","layer":"/approuter","level":"info","container_id":"10.32.1.5","component_type":"application","component_id":"5b8ed629-291b-4e5e-9e4f-de1a8922d6e4","component_name":"purchase-request-backend-approuter","component_instance":-1,"source_instance":-1,"organization_id":"356975e6-84af-4448-974f-57b052aa2bab","organization_name":"1b7fbc6atrial","space_id":"6d30c9a4-0ab5-4ffc-a269-75b8540dfac5","space_name":"dev","context_id":"mv5bgu1p","msg":"Application router version 23.3.0"} (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:34.626830] {"written_at":"2026-10-12T13:57:34.626Z","written_ts":1791813454626000000,"csn_component":"-","correlation_id":"mv5bgu1u","type":"log","logger":"nodejs-logger","layer":"/Configuration","level":"info","container_id":"10.32.1.5","component_type":"application","component_id":"5b8ed629-291b-4e5e-9e4f-de1a8922d6e4","component_name":"purchase-request-backend-approuter","component_instance":-1,"source_instance":-1,"organization_id":"356975e6-84af-4448-974f-57b052aa2bab","organization_name":"1b7fbc6atrial","space_id":"6d30c9a4-0ab5-4ffc-a269-75b8540dfac5","space_name":"dev","context_id":"mv5bgu1u","msg":"No COOKIES environment variable"} (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:34.632589] {"written_at":"2026-10-12T13:57:34.632Z","written_ts":1791813454632000000,"csn_component":"-","correlation_id":"mv5bgu20","type":"log","logger":"nodejs-logger","layer":"/Configuration","level":"info","container_id":"10.32.1.5","component_type":"application","component_id":"5b8ed629-291b-4e5e-9e4f-de1a8922d6e4","component_name":"purchase-request-backend-approuter","component_instance":-1,"source_instance":-1,"organization_id":"356975e6-84af-4448-974f-57b052aa2bab","organization_name":"1b7fbc6atrial","space_id":"6d30c9a4-0ab5-4ffc-a269-75b8540dfac5","space_name":"dev","context_id":"mv5bgu20","msg":"xs-app.json: Application does not have directory for static resources!"} (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:34.638750] {"written_at":"2026-10-12T13:57:34.638Z","written_ts":1791813454638000000,"csn_component":"-","correlation_id":"mv5bgu1p","type":"log","logger":"nodejs-logger","layer":"/approuter","level":"info","container_id":"10.32.1.5","component_type":"application","component_id":"5b8ed629-291b-4e5e-9e4f-de1a8922d6e4","component_name":"purchase-request-backend-approuter","component_instance":-1,"source_instance":-1,"organization_id":"356975e6-84af-4448-974f-57b052aa2bab","organization_name":"1b7fbc6atrial","space_id":"6d30c9a4-0ab5-4ffc-a269-75b8540dfac5","space_name":"dev","context_id":"mv5bgu1p","msg":"Application router is listening on port: 8080"} (STDOUT, APP/PROC/WEB)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:37.656097] Container became healthy (STDOUT, CELL)#
+#2026 10 12 13:57:38.329#Z#DEBUG#aabcede1-c644-11f1-bf25-eeee0a8cd8bd.purchase-request-backend-approuter#flowable-async-job-executor-thread-5743#
+[PollStartAppStatusExecution] 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 [2026-10-12T13:57:37.694363] Process became ready with guid 5b8ed629-291b-4e5e-9e4f-de1a8922d6e4 payload: {"instance"=>"47556ddc-2c54-42ee-66fb-acef", "index"=>0, "cell_id"=>"d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0", "ready"=>true, "version"=>"3de45631-f4f1-40fd-b940-28e39ea8b8ed"} (STDOUT, API)#

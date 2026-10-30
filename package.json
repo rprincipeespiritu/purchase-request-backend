@@ -22,26 +22,28 @@
           "kind": "hana"
         }
       },
-      "auth": {
-        "kind": "mocked",
-        "users": {
-          "requester1": {
-            "password": "requester1",
-            "roles": [
-              "Requester"
-            ]
-          },
-          "requester2": {
-            "password": "requester2",
-            "roles": [
-              "Requester"
-            ]
-          },
-          "approver": {
-            "password": "approver",
-            "roles": [
-              "Approver"
-            ]
+      "[development]": {
+        "auth": {
+          "kind": "mocked",
+          "users": {
+            "requester1": {
+              "password": "requester1",
+              "roles": [
+                "Requester"
+              ]
+            },
+            "requester2": {
+              "password": "requester2",
+              "roles": [
+                "Requester"
+              ]
+            },
+            "approver": {
+              "password": "approver",
+              "roles": [
+                "Approver"
+              ]
+            }
           }
         }
       },

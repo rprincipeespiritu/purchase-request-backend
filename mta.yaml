@@ -38,6 +38,25 @@ modules:
       buildpack: nodejs_buildpack
     requires:
       - name: purchase-request-backend-db
+  
+  - name: purchase-request-backend-approuter
+    type: nodejs
+    path: approuter
+    parameters:
+      instances: 1
+      memory: 256M
+      disk-quota: 512M
+      buildpack: nodejs_buildpack
+    build-parameters:
+      builder: npm-ci
+    requires:
+      - name: purchase-request-backend-auth
+      - name: srv-api
+        group: destinations
+        properties:
+          name: srv-api
+          url: ~{srv-url}
+          forwardAuthToken: true
 
 resources:
   - name: purchase-request-backend-auth
@@ -53,6 +72,8 @@ resources:
           credential-types:
             - "binding-secret"
             - "x509"
+          redirect-uris:
+            - "https://1b7fbc6atrial-dev-purchase-request-backend-approuter.cfapps.us10-001.hana.ondemand.com/login/callback"
         role-collections:
           - name: 'Requester (purchase-request-backend ${org}-${space})'
             description: 'Requester role collection'
