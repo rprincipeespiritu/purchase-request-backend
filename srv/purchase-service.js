@@ -1,4 +1,5 @@
 const cds = require("@sap/cds");
+const { randomUUID } = require("node:crypto");
 
 module.exports = cds.service.impl(async function () {
 
@@ -100,64 +101,81 @@ module.exports = cds.service.impl(async function () {
     // PURCHASE REQUESTS
     // =========================================================
 
-    this.before("CREATE", PurchaseRequests, async req => {
+    this.before("CREATE", "PurchaseRequests", async (req) => {
+        const data = req.data;
 
-        const tx = cds.tx(req);
-
-        // ==========================================
-        // USUARIO AUTENTICADO
-        // ==========================================
-
+        // 1. Obtener usuario autenticado
         const username = req.user.id;
 
-        const user = await tx.run(
-            SELECT.one
-                .from(db.Users)
-                .where({ username })
-        );
+        const user = await SELECT.one
+            .from("com.portfolio.purchase.Users")
+            .where({ username });
 
         if (!user) {
             return req.reject(
-                403,
-                "El usuario autenticado no está registrado"
+                400,
+                `El usuario ${username} no está registrado`
             );
         }
 
-        // Nunca confiar en requester_ID enviado por frontend
-        req.data.requester_ID = user.ID;
+        // 2. Asignar solicitante y departamento
+        data.requester_ID = user.ID;
 
-        // El departamento también se obtiene del usuario
-        req.data.department_ID = user.department_ID;
-
-        // Toda solicitud nueva comienza como DRAFT
-        req.data.status = "DRAFT";
-
-
-        // ==========================================
-        // CALCULAR ITEMS
-        // ==========================================
-
-        let total = 0;
-
-        if (req.data.items) {
-
-            for (const item of req.data.items) {
-
-                validateItem(
-                    item.quantity,
-                    item.unitPrice,
-                    req
-                );
-
-                item.subtotal =
-                    Number(item.quantity) *
-                    Number(item.unitPrice);
-
-                total += item.subtotal;
-            }
+        if (user.department_ID) {
+            data.department_ID = user.department_ID;
         }
 
-        req.data.totalAmount = total;
+        // 3. Generar número único de solicitud
+        // Identificador provisional: posteriormente podremos
+        // implementar numeración correlativa PR-2026-0001.
+        data.requestNumber =
+            `PR-${new Date().getFullYear()}-${randomUUID()
+                .replace(/-/g, "")
+                .slice(0, 12)
+                .toUpperCase()}`;
+
+        // 4. Estado inicial
+        data.status = "DRAFT";
+
+        // 5. Validar productos
+        if (!Array.isArray(data.items) || !data.items.length) {
+            return req.reject(
+                400,
+                "Debe agregar al menos un producto o servicio"
+            );
+        }
+
+        // 6. Calcular importe total
+        let totalCents = 0;
+
+        for (const item of data.items) {
+            const quantity = Number(item.quantity);
+            const unitPrice = Number(item.unitPrice);
+
+            if (
+                !item.product?.trim() ||
+                !Number.isInteger(quantity) ||
+                quantity <= 0 ||
+                !Number.isFinite(unitPrice) ||
+                unitPrice <= 0 ||
+                Math.abs(
+                    unitPrice * 100 - Math.round(unitPrice * 100)
+                ) > 1e-7
+            ) {
+                return req.reject(
+                    400,
+                    "Producto, cantidad o precio inválido"
+                );
+            }
+
+            const subtotalCents =
+                Math.round(unitPrice * 100) * quantity;
+
+            item.subtotal = (subtotalCents / 100).toFixed(2);
+            totalCents += subtotalCents;
+        }
+
+        data.totalAmount = (totalCents / 100).toFixed(2);
     });
 
 

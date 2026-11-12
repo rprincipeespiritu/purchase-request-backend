@@ -15,9 +15,6 @@
   "cds": {
     "requires": {
       "db": {
-        "[pg]": {
-          "kind": "postgres"
-        },
         "[production]": {
           "kind": "hana"
         }

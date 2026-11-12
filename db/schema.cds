@@ -32,7 +32,7 @@ entity Users : cuid, managed {
 
 entity PurchaseRequests : cuid, managed {
 
-    requestNumber : String(20)  @mandatory;
+    requestNumber : String(20);
     requestDate   : Date;
     status        : RequestStatus @default: 'DRAFT';
     justification : String(500);
