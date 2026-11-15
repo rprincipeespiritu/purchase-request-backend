@@ -15,7 +15,7 @@ service PurchaseRequestService {
                 'submit'
             ],
             to   : 'Requester',
-            where: 'requester.username = $user'
+            where: 'requester.identityId = $user'
         },
         {
             grant: 'READ',
@@ -51,7 +51,7 @@ service PurchaseRequestService {
                 'DELETE'
             ],
             to   : 'Requester',
-            where: 'request.requester.username = $user'
+            where: 'request.requester.identityId = $user'
         },
         {
             grant: 'READ',

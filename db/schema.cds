@@ -1,9 +1,6 @@
 namespace com.portfolio.purchase;
 
-using {
-    cuid,
-    managed
-} from '@sap/cds/common';
+using {cuid, managed} from '@sap/cds/common';
 
 
 entity Departments : cuid, managed {
@@ -13,7 +10,7 @@ entity Departments : cuid, managed {
     description : String(255);
 
     users       : Association to many Users
-                    on users.department = $self;
+                      on users.department = $self;
 }
 
 
@@ -21,13 +18,13 @@ entity Users : cuid, managed {
 
     username   : String(255) @mandatory;
     identityId : String(255);
-    fullName    : String(120) @mandatory;
-    email       : String(150) @mandatory;
+    fullName   : String(120) @mandatory;
+    email      : String(150) @mandatory;
 
-    department  : Association to Departments;
+    department : Association to Departments;
 
-    requests    : Association to many PurchaseRequests
-                    on requests.requester = $self;
+    requests   : Association to many PurchaseRequests
+                     on requests.requester = $self;
 }
 
 
@@ -37,26 +34,26 @@ entity PurchaseRequests : cuid, managed {
     requestDate   : Date;
     status        : RequestStatus @default: 'DRAFT';
     justification : String(500);
-    totalAmount   : Decimal(15,2);
+    totalAmount   : Decimal(15, 2);
 
     requester     : Association to Users;
     department    : Association to Departments;
 
     items         : Composition of many PurchaseRequestItems
-                      on items.request = $self;
+                        on items.request = $self;
 }
 
 
 entity PurchaseRequestItems : cuid, managed {
 
-    product      : String(100) @mandatory;
-    description  : String(255);
+    product     : String(100) @mandatory;
+    description : String(255);
 
-    quantity     : Integer;
-    unitPrice    : Decimal(15,2);
-    subtotal     : Decimal(15,2);
+    quantity    : Integer;
+    unitPrice   : Decimal(15, 2);
+    subtotal    : Decimal(15, 2);
 
-    request      : Association to PurchaseRequests;
+    request     : Association to PurchaseRequests;
 }
 
 type RequestStatus : String enum {

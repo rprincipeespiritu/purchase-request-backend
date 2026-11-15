@@ -1,5 +1,8 @@
 const cds = require("@sap/cds");
 const { randomUUID } = require("node:crypto");
+const {
+    ensureCurrentUser
+} = require("./lib/current-user");
 
 module.exports = cds.service.impl(async function () {
 
@@ -9,6 +12,7 @@ module.exports = cds.service.impl(async function () {
     } = this.entities;
 
     const db = cds.entities("com.portfolio.purchase");
+
 
     // =========================================================
     // HELPERS
@@ -34,6 +38,15 @@ module.exports = cds.service.impl(async function () {
 
     async function validateDraftRequest(tx, requestID, req) {
 
+        const identityId = req.user.id;
+
+        if (!identityId || identityId === "anonymous") {
+            return req.reject(
+                401,
+                "Usuario no autenticado"
+            );
+        }
+
         const request = await tx.run(
             SELECT.one
                 .from(PurchaseRequests)
@@ -51,16 +64,20 @@ module.exports = cds.service.impl(async function () {
             );
         }
 
-        const user = await tx.run(
-            SELECT.one
-                .from(db.Users)
-                .where({ username: req.user.id })
-        );
+        const user = await SELECT.one
+            .from(db.Users)
+            .where({
+                or: [
+                    { identityId },
+                    { username: identityId }
+                ]
+            });
 
         if (!user) {
             return req.reject(
                 403,
-                "El usuario autenticado no está registrado"
+                "El usuario autenticado no está registrado. " +
+                "Debe completar la sincronización de usuario."
             );
         }
 
@@ -104,19 +121,17 @@ module.exports = cds.service.impl(async function () {
     this.before("CREATE", "PurchaseRequests", async (req) => {
         const data = req.data;
 
-        // 1. Obtener usuario autenticado
-        const username = req.user.id;
+        // 1. Identificar usuario autenticado
+        const identityId = req.user.id;
 
-        const user = await SELECT.one
-            .from("com.portfolio.purchase.Users")
-            .where({ username });
-
-        if (!user) {
+        if (!identityId || identityId === "anonymous") {
             return req.reject(
-                400,
-                `El usuario ${username} no está registrado`
+                401,
+                "Usuario no autenticado"
             );
         }
+
+        const user = await ensureCurrentUser(req);
 
         // 2. Asignar solicitante y departamento
         data.requester_ID = user.ID;
@@ -245,6 +260,15 @@ module.exports = cds.service.impl(async function () {
         const tx = cds.tx(req);
         const ID = req.params[0].ID;
 
+        const identityId = req.user.id;
+
+        if (!identityId || identityId === "anonymous") {
+            return req.reject(
+                401,
+                "Usuario no autenticado"
+            );
+        }
+
         const request = await tx.run(
             SELECT.one
                 .from(PurchaseRequests)
@@ -258,23 +282,27 @@ module.exports = cds.service.impl(async function () {
             );
         }
 
-        const user = await tx.run(
-            SELECT.one
-                .from(db.Users)
-                .where({ username: req.user.id })
-        );
+        const user = await SELECT.one
+            .from(db.Users)
+            .where({
+                or: [
+                    { identityId },
+                    { username: identityId }
+                ]
+            });
 
         if (!user) {
             return req.reject(
                 403,
-                "El usuario autenticado no está registrado"
+                "El usuario autenticado no está registrado. " +
+                "Debe completar la sincronización de usuario."
             );
         }
 
         if (request.requester_ID !== user.ID) {
             return req.reject(
                 403,
-                "No puede enviar una solicitud perteneciente a otro usuario"
+                "No tiene autorización para enviar esta solicitud"
             );
         }
 

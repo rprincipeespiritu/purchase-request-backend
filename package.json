@@ -20,6 +20,12 @@
         }
       },
       "[development]": {
+        "db": {
+          "kind": "sqlite",
+          "credentials": {
+            "url": "db.sqlite"
+          }
+        },
         "auth": {
           "kind": "mocked",
           "users": {
@@ -38,7 +44,12 @@
               "password": "requester2",
               "roles": [
                 "Requester"
-              ]
+              ],
+              "attr": {
+                "email": "rprincipe.es@outlook.com",
+                "givenName": "Requester",
+                "familyName": "Uno"
+              }
             },
             "approver": {
               "password": "approver",
