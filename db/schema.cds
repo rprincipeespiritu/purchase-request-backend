@@ -19,7 +19,8 @@ entity Departments : cuid, managed {
 
 entity Users : cuid, managed {
 
-    username    : String(50)  @mandatory;
+    username   : String(255) @mandatory;
+    identityId : String(255);
     fullName    : String(120) @mandatory;
     email       : String(150) @mandatory;
 

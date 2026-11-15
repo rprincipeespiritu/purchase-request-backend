@@ -27,7 +27,12 @@
               "password": "requester1",
               "roles": [
                 "Requester"
-              ]
+              ],
+              "attr": {
+                "email": "rprincipesp89@gmail.com",
+                "givenName": "Requester",
+                "familyName": "Uno"
+              }
             },
             "requester2": {
               "password": "requester2",
