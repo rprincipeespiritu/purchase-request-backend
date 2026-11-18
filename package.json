@@ -48,14 +48,19 @@
               "attr": {
                 "email": "rprincipe.es@outlook.com",
                 "givenName": "Requester",
-                "familyName": "Uno"
+                "familyName": "Dos"
               }
             },
             "approver": {
               "password": "approver",
               "roles": [
                 "Approver"
-              ]
+              ],
+              "attr": {
+                "email": "rprincipe.es@gmail.com",
+                "givenName": "Approver",
+                "familyName": "Uno"
+              }
             }
           }
         }
