@@ -14,7 +14,9 @@ module.exports = cds.service.impl(function () {
             ID: user.ID,
             username: user.username,
             fullName: user.fullName,
-            email: user.email
+            email: user.email,
+            isRequester: req.user.is("Requester"),
+            isApprover: req.user.is("Approver")
         };
 
     });

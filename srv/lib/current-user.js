@@ -1,6 +1,8 @@
+
 const cds = require("@sap/cds");
 
 async function ensureCurrentUser(req) {
+
     const identityId = req.user?.id;
 
     if (!identityId || identityId === "anonymous") {
@@ -30,22 +32,23 @@ async function ensureCurrentUser(req) {
     const tx = cds.tx(req);
     const { Users } = cds.entities("com.portfolio.purchase");
 
-    // Buscar por identidad autenticada.
+    // 1. Buscar por identidad autenticada
     let user = await tx.run(
-        SELECT.one.from(Users).where({ identityId })
+        SELECT.one.from(Users)
+            .where({ identityId })
     );
 
-    // Compatibilidad con usuarios locales existentes.
+    // 2. Compatibilidad con usuarios locales antiguos
     if (!user) {
         user = await tx.run(
-            SELECT.one.from(Users).where({
-                username: identityId,
-                identityId: null
-            })
+            SELECT.one.from(Users)
+                .where`username = ${identityId} and identityId is null`
         );
     }
 
+    // 3. Registrar usuario nuevo
     if (!user) {
+
         await tx.run(
             INSERT.into(Users).entries({
                 identityId,
@@ -56,22 +59,40 @@ async function ensureCurrentUser(req) {
         );
 
         user = await tx.run(
-            SELECT.one.from(Users).where({ identityId })
-        );
-    } else {
-        await tx.run(
-            UPDATE(Users)
-                .set({
-                    identityId,
-                    email,
-                    fullName
-                })
-                .where({ ID: user.ID })
+            SELECT.one.from(Users)
+                .where({ identityId })
         );
 
-        user = await tx.run(
-            SELECT.one.from(Users).where({ ID: user.ID })
-        );
+    } else {
+
+        // 4. Actualizar información del usuario
+        const changes = {};
+
+        if (!user.identityId) {
+            changes.identityId = identityId;
+        }
+
+        if (user.email !== email) {
+            changes.email = email;
+        }
+
+        if (user.fullName !== fullName) {
+            changes.fullName = fullName;
+        }
+
+        if (Object.keys(changes).length > 0) {
+
+            await tx.run(
+                UPDATE(Users)
+                    .set(changes)
+                    .where({ ID: user.ID })
+            );
+
+            user = await tx.run(
+                SELECT.one.from(Users)
+                    .where({ ID: user.ID })
+            );
+        }
     }
 
     return user;

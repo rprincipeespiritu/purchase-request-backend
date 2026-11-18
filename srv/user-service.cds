@@ -7,5 +7,7 @@ service UserService {
         username : String;
         fullName : String;
         email    : String;
+        isRequester: Boolean;
+        isApprover : Boolean;
     }
 }
