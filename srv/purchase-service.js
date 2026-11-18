@@ -282,14 +282,11 @@ module.exports = cds.service.impl(async function () {
             );
         }
 
-        const user = await SELECT.one
-            .from(db.Users)
-            .where({
-                or: [
-                    { identityId },
-                    { username: identityId }
-                ]
-            });
+        const user = await tx.run(
+            SELECT.one
+                .from(db.Users)
+                .where`identityId = ${identityId} or username = ${identityId}`
+        );
 
         if (!user) {
             return req.reject(
