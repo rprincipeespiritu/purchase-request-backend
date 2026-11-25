@@ -4,6 +4,7 @@ const cds = require("@sap/cds");
 async function ensureCurrentUser(req) {
 
     const identityId = req.user?.id;
+    console.log("datos del usuario CIS actual: " + JSON.stringify(req.user));
 
     if (!identityId || identityId === "anonymous") {
         return req.reject(401, "Usuario no autenticado");
